@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation=
+                 "http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         id="WebApp_ID" version="3.0">
+    <display-name>FirstJspServletJsp</display-name>
+    <welcome-file-list>
+        <welcome-file>/jsp/common/login.jsp</welcome-file>
+    </welcome-file-list>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/jsp/error/error.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.RuntimeException</exception-type>
+        <location>/jsp/error/error.jsp</location>
+    </error-page>
+    <listener>
+        <listener-class>
+            by.me.bikesharing.listener.ControllerListener
+        </listener-class>
+    </listener>
+    <listener>
+        <listener-class>
+            by.me.bikesharing.listener.SessionListener
+        </listener-class>
+    </listener>
+    <filter>
+        <filter-name>ProtectAdminCommandFilter</filter-name>
+        <filter-class>by.me.bikesharing.filter.ProtectAdminCommandFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ProtectAdminCommandFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>ProtectUserCommandFilter</filter-name>
+        <filter-class>by.me.bikesharing.filter.ProtectUserCommandFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ProtectUserCommandFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+</web-app>

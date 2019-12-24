@@ -1,0 +1,134 @@
+.order-bike-form {
+    position: relative;
+    height: 450px;
+    width: 400px;
+    bottom: 620px;
+    left: 1050px;
+    /*border: 5px solid #f00;*/
+}
+
+.order-bike-input-margin {
+    position: relative;
+    /*border: 5px solid blue;*/
+
+    margin: 20px;
+}
+
+.order-bike-cards-placement {
+    margin: 1px;
+    width: 360px;
+    position: relative;
+    border: 1px solid black;
+    left: 20px;
+    background-color: #5bc1df;
+    color: #ffffff;
+}
+
+.site-header {
+    margin: 0;
+    background-color: #5bc1df;
+    color: white;
+    height: 50px;
+}
+
+.site-footer {
+    background-color: #5bc1df;
+    color: white;
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    position: fixed; /* Фиксированное положение */
+    left: 0;
+    bottom: 0; /* Левый нижний угол */
+    width: 100%;
+    height: 50px;
+}
+
+.user-header-link {
+    margin: 40px;
+    color: white;
+}
+
+.login-image-logout-placement {
+    position: absolute;
+    right: 40px;
+    top: -10px;
+}
+
+.footer-and-header-text-margin {
+    position: relative;
+    top: 15px;
+}
+
+.round {
+    border-radius: 100px;
+    box-shadow: 0 0 0 3px white, 0 0 13px #333;
+}
+
+.image-placement {
+    position: absolute;
+    right: 100px;
+    top: -10px;
+}
+
+.logout-button-placement {
+    position: absolute;
+    right: 25px;
+    top: -5px;
+    color: white;
+}
+
+.current-username-placement {
+    position: absolute;
+    right: 150px;
+    top: -5px;
+}
+
+.bikes-link-placement {
+    position: absolute;
+    left: 525px;
+    top: -10px;
+}
+
+.my-orders-link-placement {
+    position: absolute;
+    left: 625px;
+    top: -10px;
+}
+
+.users-link-placement {
+    position: absolute;
+    left: 800px;
+    top: -10px;
+}
+
+.bikes-admin-link-placement {
+    position: absolute;
+    left: 675px;
+    top: -10px;
+}
+
+.deposit-link-placement {
+    position: absolute;
+    left: 800px;
+    top: -10px;
+}
+
+.deposit-form-placement {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.input {
+    border: solid 1px #5bc1df;
+    border-radius: 50px;
+}
+
+.linkCard-link-placement{
+    position: absolute;
+    left: 925px;
+    top: -10px;
+}
